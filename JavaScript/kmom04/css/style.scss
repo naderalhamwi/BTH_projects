@@ -1,0 +1,86 @@
+$dark: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    p{
+        margin: 1%;
+        kbd {
+            border: 2px solid $dark; 
+            box-shadow: 2px 2px $dark; 
+            font-size: .85em; 
+            line-height: .85em; 
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: .05em; 
+            padding: 3px 5px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.box {
+  position: absolute;
+}
+
+.resizable {
+  resize: both;
+  overflow: auto;
+}
+.removed{
+  transition: all .5s linear;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.red {
+  background-color: red;
+}
+
+.size200 {
+  height: 200px;
+  width: 200px;
+}
+.selected{
+  border: 5px solid #000;
+}
+.circle{
+  border-radius: 50%;
+}
+.rotate{
+  animation: mymove 1s infinite;
+  transform-origin: center;
+  text-align: center;
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

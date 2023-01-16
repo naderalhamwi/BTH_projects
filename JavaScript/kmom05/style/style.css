@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body #app {
+  margin: auto;
+  width: 70%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background-color: #008fe0;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+table tr:nth-child(odd) {
+  background-color: #b7b7b7;
+}
+table .selected {
+  background-color: #04e000;
+}
+
+select {
+  background-color: #1d1d1d;
+  border: none;
+  color: #fff;
+  padding: 1%;
+}
+
+.leastValues {
+  background-color: #04e000;
+}/*# sourceMappingURL=style.css.map */

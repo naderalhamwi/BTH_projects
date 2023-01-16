@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>inställningar</title>
+</head>
+<body id="app">
+    <header>
+        <nav>
+            <a href="index.html">Me</a> 
+            <a href="redovisning.html">Redovisning</a> 
+            <a href="om.html">Om</a> 
+            <a href="settings.html">Kmom03</a>
+        </nav>
+        <p id="dayTime"></p>
+    </header>
+
+    <main>
+        <p>Change site theme by drag theme from theme list and drop it in current style.</p>
+        <h3>Theme list:</h3>
+        <div id="themeDiv">
+            <p  draggable="true" ondragstart="drag(event)" id="basicTheme">Basic Theme</p>
+            <p  draggable="true" ondragstart="drag(event)" id="theme2">Theme 2</p>
+            <p  draggable="true" ondragstart="drag(event)" id="crazySite">Crazy Site!!!!!</p>
+        </div>
+    
+        <h3>Current style:</h3>
+        
+        <div id="currentThemeDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    
+        <button onclick="saveTheme()">Save</button>
+        <button onclick="resetTheme()">Reset</button>
+    
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>

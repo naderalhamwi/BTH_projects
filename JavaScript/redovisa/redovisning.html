@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redovisning av kursmoment i kursen programmera med JavaScrip</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="app">
+        <header>
+            <nav>
+                <a href="index.html">Me</a> 
+                <a href="redovisning.html">Redovisning</a> 
+                <a href="om.html">Om</a> 
+                <a href="settings.html">Kmom03</a>
+            </nav>
+            <p id="dayTime"></p>
+            
+        </header>
+        <article>
+            <header>
+                <h1>Redovisning av kursmoment i kursen programmera med JavaScrip</h1>
+            </header>
+
+            <section>
+                <h2>Kmom01</h2>
+                <p>Denna kursmoment använt jag mig av Visual studio code, Ubuntu on windows och firefox. De har vi jobbat med under kursen Webb Teknologier.
+                </p>
+                <p>Kursen handlar om att programmera med JavaScrip, det har jag jobbat med tidigare på mina egna projekt och tester.
+                </p>
+                <p>Det var ny för mig att använda js I terminalen, att köra js filer I terminalen var inte svårt att börja med, och jag tycker att det kan underlätta mycket nu, då kan man skapa enkla saker och köra de I terminalen som vi gjort med python.
+                </p>
+                <p>För denna kursmomenten så fick vi skapa en rapport där vi för varje år mellan 2000 och 2019 räknar ut den aktuella smält hastigheten och den aktuella stigningen av havsnivån.
+                </p>
+                <p>Det fanns ett extra uppgift där man ska skapa ett function Calculate som har två argument endYear och logRate, där endYear är året som rapporten ska sluta på och logRate är hur ofta åren ska skrivas ut. Ett exempel på hur det kan se ut med argumenten calculate(2050, 5).
+                Extra uppgiften var inte svårt och göra, då man behövde använda samma kod medan endYear och logRate är den nya variabel som skickas av användaren genom funktionen.
+                </p>
+            </section>
+
+            <section>
+                <h2>Kmom02</h2>
+                <p>I kursmomenten 2 fick vi en array av djur som finns i specifika kontinent. Uppgiften var att följa skapa olika funktioner enligt en documentation. 
+                    Enligt dokumentationen så ska man ha två olika moduler som innehåller olika funktioner,
+                    Module helpers och report. </p>
+                <p>I modul helpers så ska det finnas följande funktioner</p>
+                <ul>
+                    <li>addAnimal: lägg till en ny djur i en specifik kontinent.</li>
+                    <li>allAnimals: hämtar alla djuren från alla kontinent.</li>
+                    <li>getAnimalsByContinent: hämta alla djur av en specifik kontinent.</li>
+                    <li>getRandomAnimal: slumpa fram en djur från alla kontinent.</li>
+                    <li>removeAnimal: tar bort en specifik djur från alla kontinent.</li>
+                </ul>
+                <p>I modul report så ska det finnas följande funktioner</p>
+                <ul>
+                    <li>filterAnimals: hämtar alla djur from alla kontinent där djurens namn har specifikt antal karaktärer.</li>
+                    <li>prettyPrint: skriver ut alla djur som finns in en kontinent på ett snyggt sätt.</li>
+                    <li>sortAnimals: hämtar alla djur från en kontinent och sortera de.</li>
+                </ul>
+                <p>Dessa funktioner hämtar ut datan av en modul som heter animals.msj, där den innehåller olika listor som som innehåller djuren. Jag hanterade modulen animals som en object då bil det de olika listor i den som nycklar och det blir lättare till mig att genomföra inmatade kontinent med de nycklar för och hämta den specifika listan</p>
+                <p>Just nu känner jag ingen svårighet med javaScript, den är ju lättare jämfört med python eller php. Kan vara att javaScript lite jobbigare när det kommer till felhantering då kan det vara lite jobbig och hitta felet, men jag är van med språket och vet hur det är när man jobbar med det, så försöker jag göra små ändringar och sen testar så att allt stämmer</p>
+                <p>Något jag lärde mig och var lite jobbig att få fram var jsdoc. Fick att spendera lite tid tills jag fattade hur och var jag ska göra själva doc filen som innehåller documentation sida till min kod. Men jag kunde lösa upp det och har nu fixat uppgiften som den ska</p>
+            </section>
+
+            <section>
+                <h2>Kmom03</h2>
+                <p>I kursmomenten 3 så började vi med att kaplade javascript och html, då kan man skapa nya element eller ändra innehåll på element med hjälp av DOM. DOM stor för Document Object Model (DOM) och är ett programmeringsgränssnitt för webbdokument. Den representerar sidan så att program kan ändra dokumentets struktur, stil och innehåll. DOM representerar dokumentet som noder och objekt; på så sätt kan programmeringsspråk interagera med sidan.</p>
+                <p>
+                    Men hjälp av DOM så kan via göra uppgiften, då uppgiften är att man har en lista av namn, datum och färgen som tillhör till varandra, man ska visa upp varje stycken på egen kort  när användaren klickar på en knappt!. Knappen sedan ska försvinna när alla kort är skapat. Knapparna ska visa också vad nästa kort är och texten ska uppdateras för nästa kort. 
+                </p>
+                <p>För att göra det lätt för mig så skapade jag en div element som har id app och den är min root element, där lägger jag alla andra element med hjälp av DOM. Först så skapas knappen när sidan laddas in och lägger den i root diven, sedan skapas de andra element som jag behöver för uppgiften och lägger den i root diven oxkså, så har jag en ren html fil på detta sättet.</p>
+                <p>I redovisa sidan så tänkte jag att ha något jag tyckte om att lägga och det är valet att vem som helt kunna ändra teman på sidan. Jag gjort så man kan välja mellan tre olika teman Basic Theme, Theme 2, Crazy site!!!!! Och Default Theme. Man kan gå till inställningar och dra en tema av teman lista och släpper den i nuvarande teman så kan teman ändras när man sparar. Och då kan teman sparas alltid tills man ändrar på den!. Jag använt miga av localStorage för att ha koll på vilken teman som ska aktiveras!. Också så har man en reset knapp som kan sätta in  Default Theme.</p>
+                <p>Det var enkla saker som gjort under denna kursmomenten, inget var jättesvårt eller konstig både för kursmomenten 3 och redovisa sidan. Jag känner till Js och html och css sedan innan som jag nämnde innan på andra kurser, men det som jag inte är jätte bekväm med är validering fel då man måste ha tomma rader eller semikolon osv.., när jag jobbar med egen project så har jag inte sånt konstiga validering som stör mig!. Kanske det är det som jag tycker är jätte svårt och jobbigt!. </p>
+                <p>Det kan vara att några divar hoppar lite ner då har jag inte fokuserat mycket på css för denna kursmomenten, utan bara js koden. Och i redovisa projektet i settings när man dra och släpper en tema så kan det hända att tema inte sitter rätt då kan det inte aktiveras för någon anledning tror man måste lägga den nya teman under den nuvarande teman då fungerar det!.</p>
+            </section>
+
+            <section>
+                <h2>Kmom04</h2>
+                <p>Denna kurs momenten var inte jättesvårt men jobbigt, behövde göra om allt från början då mina event ville inte fungerar rätt för någon aning. Men slut uppgiften var något jag är nöjd med. Uppgiften var att det finns en röd låda som ska centreras på olika skärmstorlekar, och som ska vara en standart låda man går ut ifrån när man skapar nya lådor. Man ska också ha olika event som gör till exempel, byta lådan till en cirkel, byta färg, byta position osv. Jag skapade en meny där man kan se var olika knappar gör. </p>
+                <p>Jag ändrade standart lådan då skapade jag den dynamisk med DOM, jag kände att det var lättare att jobba med och man kan ha mer kontroll, samt all kod finns på en och samma plats. Mina function är inte jätte avancerade allt är skapat på det lättaste sätt jag tänkte på, då ville jag spara tid och energi. 
+                </p>
+                <p>Jag tyckte att lägga alla funktioner på en js fil som heter app.js och en anna fil som heter main.js. På min main.js så har jag bara en init function som innehåller funktionen som skapar standard lådan och en event Listen som läggs till själva html dokumentet. På app.js så har jag alla funktioner då tyckte jag att ha alla på en och samma ställe skulle göra det lättare än att ha många filer.
+                </p>
+                <p>För den extra funktionen så valde jag att göra de valda lådor att snurra runt när man trycker på knappen ‘n’, man kan se det på mynen som fins. Det är inte jätte avancerat men ville göra mer då jag inte hade jättemycket tid för det. 
+                </p>
+                <p>På redovisa sida så har jag en menyval kmom04 som är i me/start sida, där den skapar en enkel box som kan gå runt på skärmen och byta färg varje gång den rör sig!.
+                </p>
+            </section>
+
+            <section>
+                <h2>Kmom05</h2>
+                <p>Man kan spara spelare status, eller en applikation inställningar som jag gjorde på redovisning sida under kmom03. Eller spara enkla data som hämtas av en fetch function så man kan enkelt hantera data på lätt sätt. Det kan också hända att man kan spara ändringar i webstorage innan att skicka det till webbserver, då man kan undvika att ha mycket kontakt med server, då laddar man upp det önskade data till server en gång istället för många gånger.
+                    Fetcha information av en api länk var inte jätte konstig, det var lätt att hämta datorn och spara rätt data, då vi visste hur datan vi får av länken ska ser ut ska.
+                    Med synkron då körs funktioner en i taget, då kan det bildas ett problem om en av funktionerna inte returneras rätt värde. Med asynkron då körs funktioner en i tagen men med tanken där man kan väntar för en funktion till att returneras rätt värde innan att fortsätta med resten av funktioner.
+                    För min del så var det något som jag känner igen, då jag inte har jobbat med det sedan länge, men jag under den kursmoment kommer ihåg hur det går till med fetch funktion och hur datan hanteras av en api länk. Under kors momenten 5 så gick det bra och hade ingen konstigheter, då jag var bekant med fetch funktionen och datalagring på webb storage. 
+                    </p>
+            </section>
+
+            <section>
+                <h2>Kmom06</h2>
+                <p>Under kursmomenten så kom upp termerna scope och closure, jag har redan använt de sedan tidigare, och man kan har nytta av de på olika sätt, då scope är variabler som deklarerade inuti en function, då är dem lokan(privata) variabler och kan nås bara i funktionen eller genom function. det kan vara olika typer av variabler även funktioner.  Medan closure då är de variabler som är global då kan den nås från vilken fil samt och tillgängligt i hela projektet, det kan vara alla typ av variabler eller funktioner.
+                    Det var inget nytt för mig under kursmomenten, det var bara som en påminnelse om vad jag vet innan. Jag skapade en liknande projekt med då vara det ett spel där man kan skapa en bil och välja egenskaper till bilen som färg och motor etc.
+                    Termerna this och instans var också använda under kursmomenten, de är jag väldigt medveten om då jag använde de mycket med mina tidigare java project. “This” termen är som ett sätt för att exportera variabler eller funktioner av en object då man kan  kalla på de så man kan sätta eller hämta specifika värde för just den nya variablen, till example:
+                    <code>
+                        <p>
+                            const test = {
+                        </p>
+                        <p>
+                            prop: 42,
+                        </p>
+                            <p>
+                                setProp: function(value) {
+                            </p>
+                            <p>
+                                return this.prop = value;
+                            </p>
+                            <p>
+                            },
+                            </p>
+                            <p>
+                                getProp: function() {
+                            </p>
+                            <p>
+                                return this.prop;
+                            </p>
+                            <p>
+                            },
+                            </p>
+                            <p>
+                            };
+                            </p>
+                            <p>
+                                test.setProp(12);
+                            </p>
+                            <p>
+                                console.log(test.getProp()); // Förväntad utgång: 42
+                            </p>
+                    
+                    Så en instance är vår grund object där kan vi skapa nya reference för och använda objekten. 
+                    Denna kursmomenten skapade jag hängman spelet, det var första gången jag gör den spelet med javascript, men inga svårigheter som stör mig under tiden, det gick snabbt och smidigt.
+                </code>
+                    </p>
+            </section>
+
+            <section>
+                <h2>Kmom07-10</h2>
+                <p>Här är redovisningstexten</p>
+            </section>
+
+            <footer>
+                <p>En footer till artikeln.</p>
+            </footer>
+        </article>
+        <script src="js/main.js"></script>
+        <script src="js/settings.js"></script>
+    </body>
+</html>
