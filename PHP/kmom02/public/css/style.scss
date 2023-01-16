@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    overflow-y: scroll;
+    grid-template-rows: 15% 10% auto 25%;
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo h1"
+        "logo h3";
+        grid-template-rows: auto auto;
+        grid-template-columns: 150px auto;
+        .backgroundImg{ 
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 15%;
+            object-fit: cover;
+            position: absolute;
+        }
+        h1{
+            color: #004888;
+            align-self: flex-end;
+        }
+        h4{
+            color: #0069c4;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            grid-area: logo;
+            justify-self: end;
+            align-self: center;
+        }
+    }
+    nav{    
+        margin: 1%;
+        ul{
+            margin: 0 auto;
+            list-style: none;
+            text-align: center;
+            li{
+                height: 2em;
+                display: inline-block;
+                a{
+                    width: 5em;
+                    color: white;
+                    display: block;
+                    line-height: 2em;
+                    text-decoration: none;
+                    background-color: #00172B;
+                }
+                &:first-of-type a{
+                    border-radius: 50px 0 0 50px;
+                }
+                &:last-of-type a{
+                    border-radius: 0 50px 50px 0 ;
+                    
+                }
+            }
+        }
+    }
+    main{
+        width: 100%; 
+        margin: 1% auto;
+    }
+    footer{
+        display: grid;
+        margin-bottom: 0;
+        grid-template-areas: 
+        "VLinks MLinks VTLinks"
+        ". CRText .";
+        background-color: #00172B;
+        grid-template-rows: auto 50px;
+        grid-template-columns: auto auto auto;
+        p{
+            color: white;
+        }
+        a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        ul{
+            color: wheat;
+            li{
+                margin-left: 10%;
+            }
+        }
+        .VLinks{
+            grid-area: VLinks;
+            p{
+                margin: 2%;
+            }
+        }
+        .MLinks{
+            
+            grid-area: MLinks;
+            p{
+                margin: 2%;
+            }
+        }
+        .VTLinks{
+            grid-area: VTLinks;
+            p{
+                margin: 2%;
+            }
+            
+        }
+        .CRText{
+            height: auto;
+            grid-area: CRText;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    a{
+        transition: color 200ms ease;
+
+        &:hover{
+            color: #51a7f3;
+        }
+    }
+}
+.mainWithAside{
+    display: grid;
+    grid-template-rows: auto auto;
+    div{
+        figure{
+            img{
+                width: 100%;
+            }
+            figcaption{
+                text-align: center;
+            }
+        }
+    }
+    article{
+        hr{
+            color: #004888;
+        }
+        h2{
+            padding: 1%;
+        }
+        p{
+            padding: 1%;
+        }
+        ol{
+            padding: 1%;
+            li{
+                padding: 1%;
+                margin: 0 5%;
+            }
+        }
+    }
+    aside{
+        border: 1px solid #004888;
+        h4{
+            padding: 5%;
+        }
+        ul{
+            list-style: none;
+            padding: 1%;
+            li{
+                padding: 5%;
+                a{
+                    padding: 5%;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color: #0069c4; 
+                    }
+                }
+            }
+            hr{
+                width: 50%;
+                margin: 0 25%;
+            }
+        }
+        figure{
+            text-align: center;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .asideKursInfo{
+        padding: 5%;
+        p{
+            padding: 5%;
+        }
+    }
+}
+.wrapper { 
+    text-align: center;
+    background-color: white;
+    h1{
+        padding: 9% 0;
+        animation-name: wrapper;
+        animation-duration: 18s;
+        animation-direction: alternate;
+        font-family: 'Ms Madi', cursive;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes wrapper {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100% {color: green;}
+      }
+}
+.byline{
+    width: auto;
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: 
+    "figure h1"
+    "figure p";
+    background-color: white;
+    grid-template-rows: 10% auto;
+    grid-template-columns: auto auto;
+    figure{
+        grid-area: figure;
+        background-color: #00172B;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        figcaption{
+            margin: 0 1%;
+            color: white;
+            text-align: center;
+        }
+    }
+    h1{
+        grid-area: h1;
+        color: white;
+        text-align: center;
+        background-color: #00172B;
+    }p{
+        margin: 1%;
+        grid-area: p;
+        color: #00172B;
+    }
+}
+@media only screen and (min-width: 600px) {
+   body{
+    main{
+        width: 75%;
+    }
+   }
+    .mainWithAside{
+        display: grid;
+        grid-template-columns: auto 20%;
+    }
+}

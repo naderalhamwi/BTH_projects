@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "C:\\db\\bmo.sqlite",
+            "name": "test_editing_databse"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

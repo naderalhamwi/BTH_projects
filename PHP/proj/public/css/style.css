@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+}
+
+body {
+  background-color: #5f4227;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+header {
+  background-image: url("../img/background/header_background2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header .box {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+header .box h1 {
+  padding: 2%;
+}
+header .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1%;
+}
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+}
+footer p {
+  margin-top: 1%;
+  padding: 5%;
+}
+
+main {
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main a {
+  text-decoration: none;
+  color: #000;
+  transition: 1s;
+}
+main a:hover {
+  color: #ca803a;
+}
+main table {
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+}
+main table tr td {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  transition: 1s;
+}
+main table tr td a {
+  color: #000;
+  text-decoration: none;
+}
+main table tr td a p {
+  padding: 1%;
+}
+main table tr td a h3 {
+  padding: 1%;
+}
+main table tr td:hover {
+  background-color: #e2e0e0;
+}
+main table tr:nth-child(even) {
+  background-color: #E9E9E9;
+}
+main table tr:first-of-type td {
+  background-color: #ca803a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0px 0px;
+}
+main table tr:first-of-type td h2 {
+  color: whitesmoke;
+}
+main table tr:last-of-type td {
+  background-color: #ca803a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+main table tr:last-of-type td a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+main .botom {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 5%;
+}
+main .botom a {
+  color: #ca803a;
+}
+main div {
+  width: 70%;
+  margin: auto;
+}
+main div a {
+  margin-top: 2%;
+  display: block;
+}
+main div a .object_container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+main div a .object_container img {
+  transition: 1s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main div a .object_container img:hover {
+  filter: blur(5px);
+}
+main div a .object_container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .article {
+  width: 70%;
+  margin: auto;
+}
+main .article p {
+  padding: 1%;
+}
+main .show_article_txt_part {
+  padding: 1%;
+}
+main .show_article_txt_part div {
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .show_article_txt_part div h1 {
+  padding: 1%;
+  color: #ca803a;
+}
+main .show_article_txt_part div p {
+  padding: 1%;
+}
+main .show_article_txt_part div:hover {
+  background-color: rgb(248, 248, 248);
+}
+main .show_selected_article {
+  width: 100%;
+  margin: auto;
+  padding: 1%;
+}
+main .show_selected_article h1 {
+  padding: 1% 0 1% 0;
+}
+main .show_selected_article h2 {
+  padding: 1% 0 1% 0;
+}
+main .show_selected_article p {
+  padding: 1% 0 1% 0;
+}
+main .show_selected_article a {
+  padding: 0%;
+  margin: 0%;
+}
+main .show_selected_object h2 {
+  padding: 2%;
+}
+main .show_selected_object p {
+  padding: 2%;
+}
+main .show_selected_object img {
+  padding: 2%;
+  width: 100%;
+}
+main .doc_article h2 {
+  padding: 1%;
+}
+main .doc_article p {
+  padding: 1%;
+}
+main .doc_article .doc_nav ul li a {
+  color: #ca803a;
+}
+main .wolcomeText {
+  text-align: center;
+  width: 100%;
+}
+main .wolcomeText h1 {
+  font-size: x-large;
+  padding: 2%;
+}
+main .wolcomeText p {
+  width: 50%;
+  padding: 2%;
+  margin: auto;
+}
+main .wolcomeText p a {
+  padding: 0;
+  margin: 0;
+  color: #ca803a;
+}
+
+nav {
+  text-align: center;
+}
+nav ul {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 2%;
+}
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 1s;
+}
+nav ul li a:hover {
+  color: #ca803a;
+}
+nav form {
+  padding-top: 1%;
+}
+nav form input {
+  width: 100%;
+}
+
+.main_about a {
+  color: #ca803a;
+}
+.main_about article {
+  padding: 2%;
+}
+.main_about article p {
+  padding: 1%;
+}
+.main_about .byline {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "figure h1" "figure p";
+  background-color: white;
+  grid-template-rows: 10% auto;
+  grid-template-columns: auto auto;
+}
+.main_about .byline figure {
+  grid-area: figure;
+  background-color: #00172B;
+}
+.main_about .byline figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.main_about .byline figure figcaption {
+  margin: 0 1%;
+  color: white;
+  text-align: center;
+}
+.main_about .byline h1 {
+  grid-area: h1;
+  color: white;
+  text-align: center;
+  background-color: #00172B;
+}
+.main_about .byline p {
+  margin: 1%;
+  grid-area: p;
+  color: #00172B;
+}
+
+.search_not_found {
+  height: auto;
+}
+.search_not_found div {
+  text-align: center;
+}
+.search_not_found div p {
+  padding: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+  * {
+    font-size: 16px;
+  }
+  header, footer, main, nav {
+    width: 70%;
+    margin: auto;
+  }
+  header h1 {
+    font-size: xx-large;
+  }
+  main h2 {
+    width: 50%;
+  }
+  main div a {
+    display: inline-block;
+    margin: 3%;
+  }
+  main table {
+    width: 70%;
+    margin: auto;
+  }
+  main .botom {
+    padding: 1%;
+  }
+  main .show_article_txt_part div {
+    width: 50%;
+    margin: auto;
+  }
+  main .show_selected_article {
+    width: 70%;
+    margin: auto;
+  }
+  main .doc_article {
+    width: 50%;
+    margin: auto;
+  }
+  main .wolcomeText {
+    width: 50%;
+  }
+  nav ul li {
+    padding: 1%;
+  }
+  nav form input {
+    width: 40%;
+  }
+  .main_about article {
+    width: 50%;
+    margin: auto;
+  }
+  .main_about .byline {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */

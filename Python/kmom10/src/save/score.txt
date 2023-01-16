@@ -1,0 +1,3 @@
+nader: Score: 480. Fel i procent: 4%. Level: easy
+nader: Score: 500. Fel i procent: 0%. Level: easy
+Nader: Score: 395. Fel i procent: 21%. Level: easy

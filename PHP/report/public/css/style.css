@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer";
+  overflow-y: scroll;
+  grid-template-rows: auto 5% auto 25%;
+}
+body header {
+  display: grid;
+  grid-template-areas: "logo h1" "logo h3";
+  grid-template-rows: auto auto;
+  grid-template-columns: 150px auto;
+  background-image: url("../img/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+body header h1 {
+  color: #004888;
+  align-self: flex-end;
+}
+body header h4 {
+  color: #0069c4;
+}
+body header img {
+  width: 70%;
+  grid-area: logo;
+  justify-self: end;
+  align-self: center;
+}
+body nav {
+  margin: auto;
+}
+body nav ul {
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+body nav ul li {
+  height: 2em;
+  display: inline-block;
+}
+body nav ul li a {
+  width: 5em;
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
+  background-color: #00172B;
+}
+body nav ul li:first-of-type a {
+  border-radius: 50px 0 0 50px;
+}
+body nav ul li:last-of-type a {
+  border-radius: 0 50px 50px 0;
+}
+body main {
+  width: 100%;
+  margin: 1% auto;
+}
+body footer {
+  bottom: 0;
+  display: grid;
+  grid-template-areas: "VLinks MLinks VTLinks" ". CRText .";
+  background-color: #00172B;
+  grid-template-rows: auto 50px;
+  grid-template-columns: auto auto auto;
+}
+body footer p {
+  color: white;
+}
+body footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+body footer ul {
+  color: wheat;
+}
+body footer ul li {
+  margin-left: 10%;
+}
+body footer .VLinks {
+  grid-area: VLinks;
+}
+body footer .VLinks p {
+  margin: 2%;
+}
+body footer .MLinks {
+  grid-area: MLinks;
+}
+body footer .MLinks p {
+  margin: 2%;
+}
+body footer .VTLinks {
+  grid-area: VTLinks;
+}
+body footer .VTLinks p {
+  margin: 2%;
+}
+body footer .CRText {
+  height: auto;
+  grid-area: CRText;
+  align-self: center;
+  justify-self: center;
+}
+body a {
+  transition: color 200ms ease;
+}
+body a:hover {
+  color: #51a7f3;
+}
+
+.mainWithAside {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: "div " "aside";
+}
+.mainWithAside div {
+  grid-area: div;
+}
+.mainWithAside div figure img {
+  width: 100%;
+}
+.mainWithAside div figure figcaption {
+  text-align: center;
+}
+.mainWithAside article hr {
+  color: #004888;
+}
+.mainWithAside article h2 {
+  padding: 1%;
+}
+.mainWithAside article p {
+  padding: 1%;
+}
+.mainWithAside article ol {
+  padding: 1%;
+}
+.mainWithAside article ol li {
+  padding: 1%;
+  margin: 0 5%;
+}
+.mainWithAside aside {
+  grid-area: aside;
+  border: 1px solid #004888;
+}
+.mainWithAside aside h4 {
+  padding: 5%;
+}
+.mainWithAside aside ul {
+  list-style: none;
+  padding: 1%;
+}
+.mainWithAside aside ul li {
+  padding: 5%;
+}
+.mainWithAside aside ul li a {
+  padding: 5%;
+  color: black;
+  text-decoration: none;
+}
+.mainWithAside aside ul li a:hover {
+  color: #0069c4;
+}
+.mainWithAside aside ul hr {
+  width: 50%;
+  margin: 0 25%;
+}
+.mainWithAside aside figure {
+  text-align: center;
+}
+.mainWithAside aside figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.mainWithAside .asideKursInfo {
+  padding: 5%;
+}
+.mainWithAside .asideKursInfo p {
+  padding: 5%;
+}
+
+.wrapper {
+  text-align: center;
+  background-color: white;
+}
+.wrapper h1 {
+  padding: 9% 0;
+  font-family: "Ms Madi", cursive;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-name: wrapper3;
+          animation-name: wrapper3;
+}
+.wrapper h1:first-of-type {
+  -webkit-animation-name: wrapper1;
+          animation-name: wrapper1;
+}
+.wrapper h1:last-of-type {
+  -webkit-animation-name: wrapper2;
+          animation-name: wrapper2;
+}
+@-webkit-keyframes wrapper1 {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+@keyframes wrapper1 {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+@-webkit-keyframes wrapper2 {
+  0% {
+    color: chocolate;
+  }
+  25% {
+    color: chartreuse;
+  }
+  50% {
+    color: #00172B;
+  }
+  100% {
+    color: brown;
+  }
+}
+@keyframes wrapper2 {
+  0% {
+    color: chocolate;
+  }
+  25% {
+    color: chartreuse;
+  }
+  50% {
+    color: #00172B;
+  }
+  100% {
+    color: brown;
+  }
+}
+@-webkit-keyframes wrapper3 {
+  0% {
+    font-style: italic;
+  }
+  100% {
+    font-style: normal;
+  }
+}
+@keyframes wrapper3 {
+  0% {
+    font-style: italic;
+  }
+  100% {
+    font-style: normal;
+  }
+}
+
+.byline {
+  width: auto;
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "figure h1" "figure p";
+  background-color: white;
+  grid-template-rows: 10% auto;
+  grid-template-columns: auto auto;
+}
+.byline figure {
+  grid-area: figure;
+  background-color: #00172B;
+}
+.byline figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.byline figure figcaption {
+  margin: 0 1%;
+  color: white;
+  text-align: center;
+}
+.byline h1 {
+  grid-area: h1;
+  color: white;
+  text-align: center;
+  background-color: #00172B;
+}
+.byline p {
+  margin: 1%;
+  grid-area: p;
+  color: #00172B;
+}
+
+.month_calendar_style {
+  text-align: center;
+}
+.month_calendar_style form {
+  padding: 1%;
+  text-align: center;
+}
+.month_calendar_style form input {
+  width: 15%;
+  padding: 1%;
+  border: none;
+  color: black;
+  border: #00172B 1px solid;
+}
+.month_calendar_style form:last-of-type input {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #00172B;
+}
+.month_calendar_style form:last-of-type input:first-of-type {
+  border-radius: 50px 0 0 50px;
+}
+.month_calendar_style form:last-of-type input:last-of-type {
+  border-radius: 0 50px 50px 0;
+}
+.month_calendar_style form:last-of-type input:hover {
+  color: #0069c4;
+}
+.month_calendar_style h1 {
+  text-align: center;
+}
+.month_calendar_style table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+.month_calendar_style table td, .month_calendar_style table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.month_calendar_style table th {
+  text-align: center;
+}
+.month_calendar_style table th:first-of-type {
+  width: 5%;
+}
+.month_calendar_style table th:last-of-type {
+  width: 5%;
+}
+.month_calendar_style table td {
+  text-align: center;
+}
+.month_calendar_style tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.not_friday {
+  text-align: center;
+}
+.not_friday h1 {
+  padding: 7%;
+}
+.not_friday form {
+  padding: 1%;
+}
+.not_friday form input {
+  width: 15%;
+  padding: 1%;
+}
+.not_friday form input:last-of-type {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #00172B;
+}
+
+.g_game {
+  text-align: center;
+  padding: 5%;
+}
+.g_game a, .g_game input {
+  text-decoration: none;
+  width: 15%;
+  padding: 1%;
+}
+.g_game a:last-of-type, .g_game input:last-of-type {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #00172B;
+}
+
+.table table, .table th, .table td {
+  border: 1px solid black;
+}
+
+.search_main {
+  text-align: center;
+}
+.search_main form input {
+  width: 30%;
+  margin: 1%;
+  padding: 1%;
+  background-color: white;
+}
+.search_main form input:last-of-type {
+  border: none;
+  background-color: #00172B;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template-rows: auto 10% auto 25%;
+  }
+  body header {
+    height: 25vh;
+  }
+  body main {
+    width: 75%;
+  }
+  .mainWithAside {
+    grid-template-columns: auto 20%;
+    grid-template-areas: "div aside";
+  }
+  .asideLeft {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "aside div";
+  }
+}/*# sourceMappingURL=style.css.map */
