@@ -1,0 +1,146 @@
+.index {
+  background-color: #2e2e2e;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.index h1 {
+  color: white;
+}
+.index p {
+  padding: 5%;
+  width: 50%;
+  color: white;
+  margin: auto;
+  text-align: left;
+}
+.index button {
+  cursor: pointer;
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #0077ab;
+  margin: 1%;
+  color: #fff;
+}
+.index button:hover {
+  background-color: #009bdd;
+}
+
+#info {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#info div {
+  top: 20%;
+  left: 35%;
+  width: 20%;
+  padding: 10%;
+  position: absolute;
+  margin: -25px 0 0 -60px;
+  background-color: #fff;
+  border: 3px solid green;
+}
+#info div p {
+  border-bottom: black 1px solid;
+}
+#info div button {
+  border: none;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  background: #b60101;
+  cursor: pointer;
+}
+
+.testContainer {
+  width: 50%;
+  margin: auto;
+}
+.testContainer #header {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2e2e2e;
+  color: #fff;
+  margin-top: 0;
+}
+.testContainer #header p {
+  margin-top: 0;
+  padding: 2%;
+}
+.testContainer #header p:last-of-type {
+  justify-self: end;
+  cursor: pointer;
+}
+.testContainer #body {
+  height: 300px;
+}
+.testContainer #body p {
+  border-bottom: 2px solid #3ab601;
+}
+.testContainer #body button {
+  cursor: pointer;
+  text-align: left;
+  border: 2px solid #fff;
+  width: auto;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  margin-top: 1%;
+}
+.testContainer #body button:hover {
+  border-left: 2px solid #3ab601;
+}
+.testContainer #body input {
+  width: 100%;
+  border: none;
+  margin-top: 3%;
+}
+.testContainer #body input:hover {
+  border: 1px solid #000;
+}
+.testContainer #footer {
+  text-align: right;
+  width: 100%;
+  margin: auto;
+}
+.testContainer #footer button {
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  height: 40px;
+  background: #3ab601;
+  color: #fff;
+  margin-left: 1%;
+}
+.testContainer #footer button:last-of-type {
+  background: #b60101;
+}
+.testContainer .correct {
+  color: #3ab601;
+}
+.testContainer .inCorrect {
+  color: #b60101;
+}
+
+#footer {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+#footer button {
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  height: 40px;
+  background: #b60101;
+  color: #fff;
+  margin-left: 1%;
+}/*# sourceMappingURL=style.css.map */
