@@ -1,0 +1,6 @@
+Conect to database: 
+    mariadb -udbadm -pP@ssw0rd -h$( hostname ).local
+    mariadb -umaria -pP@ssw0rd -h$( hostname ).local
+
+Run SQL script: 
+    MariaDB [DATABASE]> source 'path'
